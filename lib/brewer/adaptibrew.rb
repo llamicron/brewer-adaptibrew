@@ -3,9 +3,9 @@ require "brewer/adaptibrew/manager"
 
 module Brewer
   module Adaptibrew
-    def init
-      manager = Manager.new
-      manager.refresh
+    def self.build
+      Manager.new.clone
+      true
     end
   end
 end
